@@ -3,18 +3,18 @@ import './TodoSearch.css';
 
 function TodoSearch({
   searchValue,
-  setSearchValue,
-}) {
-  return (
-    <input
-      placeholder="Cortar cebolla"
-      className="TodoSearch"
-      value={searchValue}
-      onChange={(event) => {
-        setSearchValue(event.target.value);
-      }}
-    />
-  );
-}
+  setSearchValue
+}){
+    return (
+        <input 
+          className="TodoSearch" 
+          value={searchValue}
+          placeholder="Cortar Cebolla" 
+          onChange={(event) =>{
+            setSearchValue(event.target.value);
+          }}
+        /> 
+    );
+  }
 
 export { TodoSearch };

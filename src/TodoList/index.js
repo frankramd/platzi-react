@@ -1,12 +1,12 @@
 import './TodoList.css';
 
-function TodoList({ children }) {
-  return (
-    <ul className="TodoList">
-      {children}
-    </ul>
-  );
-}
+function TodoList(props){
+    return (
+        <ul className="TodoList">
+            {props.children}
+        </ul>
+    );
+  }
 
-export { TodoList };
-
+  /* Export Nombrado en vez de export default */
+  export { TodoList };
